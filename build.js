@@ -34,10 +34,9 @@ console.log(`${magenta}The build has started...${reset}`);
       platform: 'browser',
       tsconfig: "tsconfig.json",
     });
-    console.log(`${magenta}Build finished successfully.${reset} [${new Date().getTime() - startTime.getTime()}ms]`)
-
     copySync(resolve(__dirname, 'src/client/page'), resolve(__dirname, 'dist/client/page'));
     copySync(resolve(__dirname, 'src/client/style'), resolve(__dirname, 'dist/client/style'));
+    console.log(`${magenta}Build finished successfully.${reset} [${new Date().getTime() - startTime.getTime()}ms]`)
   } catch {
     console.log(`${red}Build failed.${reset} [${new Date().getTime() - startTime.getTime()}ms]`)
   }
