@@ -1,0 +1,16 @@
+{
+  "name": "AsCoder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AsPulse/AsCoder.git",
+  "author": "AsPulse <aspulse.x@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^18.0.4",
+    "estrella": "^1.4.1",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "dev": "node build.js && node dist/index.js"
+  }
+}
